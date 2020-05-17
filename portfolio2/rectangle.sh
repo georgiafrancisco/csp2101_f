@@ -1,3 +1,6 @@
+#Georgia Francisco
+#10434442
+
 #!/bin/bash
 
 #creating a title
