@@ -20,7 +20,10 @@ echo 'This content of rectangle.txt has been altered and transferred to rectangl
 echo '   '
 
 #formatting the content of rectangle.txt using 'sed'
-#sending the 'sed' formatted content of rectangle.txt to be outputted into rectangle_f.txt
+#using sed -e command to edit the inputted content
+#using s/ (Substitute Command) to change the content into a new format
+#using /g (Global Pattern Flag) so that all matching occurences will be changed
+#sending the 'sed' formatted content of rectangle.txt to be outputted into rectangle_f.txt using >> operator
 
 sed -e 's/ /,/g' rectangle.txt | sed -e 's/Rec/Name:Rec/g' | sed -e 's/,/ Height:/' |
 sed -e 's/,/ Width:/' | sed -e 's/,/ Area:/' | sed -e 's/,/ Colour:/' >> rectangle_f.txt
